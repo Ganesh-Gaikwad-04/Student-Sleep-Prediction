@@ -4,8 +4,10 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 
 # Load the trained model and scaler (Assuming Random Forest model for this example)
-with open('C:/Users/HP/Desktop/AI3163/AI3163/random_forest_model.pkl', 'rb') as f:
+with open(r'C:/Users/HP/Desktop/AI3163/AI3163/random_forest_model.pkl', 'rb') as f:
+    # Load your model here
     model = pickle.load(f)
+
 with open('C:/Users/HP/Desktop/AI3163/AI3163/scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
